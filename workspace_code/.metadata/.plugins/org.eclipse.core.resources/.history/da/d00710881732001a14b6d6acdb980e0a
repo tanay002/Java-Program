@@ -1,0 +1,44 @@
+package com.bytecoder.objectclassmethod;
+
+class  College11
+{
+int id;
+College11(int id)
+{
+this.id=id;
+}
+
+public int hashCode()
+{
+	int p= (id+" ").hashCode();    
+	return p;
+}
+
+public boolean equals(Object o)
+{
+	College11 c2=(College11)o;
+	if(this.hashCode()==c2.hashCode())
+	{
+		return true;
+	}
+	else 
+	{
+		return false;
+	}
+}
+}
+
+public class HashCodeCollege 
+{
+public static void main(String[] args) 
+{
+	College11 c1=new College11(23);
+	College11 c2=new College11(23);
+int m=c1.hashCode();
+int n=c2.hashCode();
+System.out.println(m);
+System.out.println(n);
+boolean b=c1.equals(c2);
+System.out.println(b);
+}
+}

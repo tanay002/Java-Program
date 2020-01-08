@@ -1,0 +1,39 @@
+package com.objectclass;
+
+public class EqualsMethod 
+{
+	int i;
+	String j;
+
+	public EqualsMethod(int i,String j) {
+	
+		i=this.i;
+		j=this.j;
+	}
+
+	public int hashCode()
+	{
+		int g= (i+" "+j).hashCode();
+		return g;
+	}
+	
+	public boolean equals(Object obj)
+	{
+		EqualsMethod e=(EqualsMethod) obj;
+		if(this.hashCode()==e.hashCode())
+			return true;
+		else
+			return f
+	}
+	public static void main(String []args)
+	{
+		HashCode2_overrided h=new HashCode2_overrided(1,"aboc");
+		HashCode2_overrided h1=new HashCode2_overrided(1,"abc");
+		int k=h.hashCode();
+		int k1=h1.hashCode();
+		                boolean b=h.equals(h1);
+		System.out.println("Hashcode of h:"+k);
+		System.out.println("Hashcode of h1:"+k1);
+		System.out.println(k1);
+	}
+}

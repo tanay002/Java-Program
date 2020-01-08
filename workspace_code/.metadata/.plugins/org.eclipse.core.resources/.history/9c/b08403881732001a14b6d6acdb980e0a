@@ -1,0 +1,58 @@
+package com.bytecoder.objectclassmethod;
+
+class Employee
+{
+	int rollno;
+	String name;
+	String add;
+	public Employee(int rollno, String name, String add) 
+	{
+		this.rollno=rollno;
+		this.name=name;
+		this.add=add;
+	}
+	
+	public String toString()
+	{
+		return rollno+" "+name+" "+add;	
+	} 
+	
+	public int hashCode()
+	{
+		int h= (rollno+name+add).hashCode();	
+		return h;
+	}
+	
+	public boolean equals(Object o)
+	{
+	Employee e2=(Employee)o;
+	if(this.hashCode()==e2.hashCode())
+		{
+		return true;
+		}
+		else 
+		{	
+		return false;          //if we have created object then we have to create an string class to overwrite our method 
+		                        // to the parent class otherwise it will call object class method
+		}
+	}
+}
+public class ObjectClass1
+{
+	 public static void main(String[] args) 
+	{
+		Employee e1=new Employee(12,"Tanay","Ranibagh");
+		Employee e2=new Employee(12,"Tanay","Ranibagh");
+	System.out.println(e1);
+	System.out.println(e2);
+	
+	int h1=e1.hashCode();
+	int h2=e2.hashCode();
+	System.out.println(h1);
+	System.out.println(h2);
+	
+	boolean b=e1.equals(e2);
+	System.out.println(b);
+	}
+	}
+

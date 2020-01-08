@@ -1,0 +1,38 @@
+
+package com.bytecoder.objectclassmethod;
+
+class Employee33
+{
+	int Id;
+	String Name;
+	String Department;
+	int DepartmentId;
+	
+	public Employee33(int Id,String Name,String Department,int DepartmentId)
+	{
+		
+		this.Id=Id; 
+		this.Name=Name;
+		this.Department=Department;
+		this.DepartmentId=DepartmentId;
+	}
+
+	public String toString()
+	{
+		return Id+" "+Name+Department+DepartmentId;
+	    
+	}
+}
+public class ToStringEmployee
+{
+	public static void main(String[] args) 
+	{
+		
+		Employee33 e1=new Employee33(25,"Tanay","coder",102);
+		Employee33 e2=new Employee33(25,"Tanay","coder",102);
+		System.out.println(e1);
+		System.out.println(e2);
+		
+	}
+
+}

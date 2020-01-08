@@ -1,0 +1,46 @@
+package com.objectclass;
+
+public class EqualsMethod 
+{
+	int i;
+	String j;
+
+	EqualsMethod(int i,String j) {
+	
+	this.i=i;
+	this.j=j;
+	}
+	public String toString()
+	{
+		return i+" "+j;	
+	}
+	public int hashCode()
+	{
+		int g=(i+" "+j).hashCode();
+		return g;
+	}
+	
+	public boolean equals(Object o)
+	{
+		EqualsMethod e=(EqualsMethod)o;
+		if(this.hashCode()==e.hashCode())
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		}
+	public static void main(String []args)
+	{   
+		EqualsMethod h=new EqualsMethod(1,"abbc");
+		EqualsMethod h1=new EqualsMethod(1,"abc");
+		/*int k=h.hashCode();
+		int k1=h1.hashCode();
+		System.out.println("Hashcode of h:"+k);
+		System.out.println("Hashcode of h1:"+k1);*/
+		 boolean b=h.equals(h1); 
+		 System.out.println(b);
+	}
+}

@@ -1,0 +1,60 @@
+	package com.bytecoder.objectclassmethod;
+	
+	class Collector6
+	{
+		int id;
+		String name;
+		int rollno;
+		Collector6(int id,String name,int rollno)
+		{
+			this.id=id;
+			this.name=name;
+			this.rollno=rollno;
+		}
+		public String toString()
+		{
+			return id+" "+name+" "+rollno;
+		}
+		public int hashCode()
+		{
+			String s=id+" "+name+" "+rollno;
+			int p=s.hashCode();
+			return p;
+		}
+		public boolean equals(Object o)
+		{
+			Collector6 c=(Collector6)o;
+			if(this.hashCode()==c.hashCode())
+			{
+				return true;
+				
+			}
+			else
+			{
+				
+				return false;
+			}
+		}
+	}
+	public class ToStringHashCodeEquals 
+	{
+		public static void main(String[] args) 
+		{
+		Collector6 c1=new Collector6(12,"Tanay",13);
+		Collector6 c2=new Collector6(12,"Tanay",13);
+		Collector6 c3=new Collector6(13,"Tanay",13);
+		System.out.println(c1+"/n"+c2+"/n"+c3);
+		int m=c1.hashCode();
+		int n=c2.hashCode();
+		int l=c3.hashCode();
+		System.out.println(m+" "+n+" "+l);
+		
+		
+		boolean b=c1.equals(c2);
+		boolean c=c2.equals(c3);
+		boolean d=c1.equals(c3);
+		System.out.println(b);
+		System.out.println(c);
+		System.out.println(d);
+	}
+		}

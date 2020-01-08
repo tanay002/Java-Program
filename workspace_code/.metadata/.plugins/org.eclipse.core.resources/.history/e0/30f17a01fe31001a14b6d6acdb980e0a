@@ -1,0 +1,16 @@
+package com.objectclass;
+
+public class HashCodeMeth
+{
+	int i=10;
+	int j=10;
+public static void main(String []args)
+{
+	HashCodeMeth h=new HashCodeMeth();
+	HashCodeMeth h1=new HashCodeMeth();
+	int k=h.hashCode();
+	int k1=h.hashCode();
+	System.out.println(k);
+	System.out.println(k1);
+}
+}

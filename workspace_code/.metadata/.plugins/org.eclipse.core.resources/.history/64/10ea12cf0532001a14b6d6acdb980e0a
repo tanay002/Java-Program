@@ -1,0 +1,30 @@
+package com.objectclass;
+
+//HashCode overrided
+public class HashCode2_overrided
+{
+     int i;
+	 String j;
+	 
+	 public HashCode2_overrided(int i,String j)
+	 {
+		i=this.i;
+		j=this.j;
+	}
+	 
+	 public int hashCode()
+	 {
+	 int g= (i+" "+j).hashCode();
+	 return g;
+	 }
+public static void main(String []args)
+{
+	HashCode2_overrided h=new HashCode2_overrided(1,"anndnbc");
+	HashCode2_overrided h1=new HashCode2_overrided(1,"aasbc");
+	int k=h.hashCode();
+	int k1=h1.hashCode();
+	System.out.println(k);
+	System.out.println(k1);
+}
+
+}

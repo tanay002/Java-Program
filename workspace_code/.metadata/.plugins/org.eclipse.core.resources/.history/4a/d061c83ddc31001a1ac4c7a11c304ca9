@@ -1,0 +1,13 @@
+package com.objectclass;
+
+public class ToStringTask 
+{
+	String s1="Tanay";
+	String s2="is awsome";
+
+	public static void main(String []args)
+	{
+      ToStringTask t=new ToStringTask();
+      System.out.println(t);
+	}
+}
