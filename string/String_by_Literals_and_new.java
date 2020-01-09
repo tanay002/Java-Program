@@ -3,11 +3,12 @@ package com.string;
 public class String_by_Literals_and_new 
 {
 	public static void main(String[] args)
-	{ 
+	{  //String by literals
 		String m="Cool JAVA";  //creating string by java literals 
 		char c []={'T','a','n','a','y'};
 	      String c1=new String(c);  //converting character array to string
 	      
+                      //String by new keywords
 	      String ck=new String("Welcome");
 	      
 	      System.out.println(m);
