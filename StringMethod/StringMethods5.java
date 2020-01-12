@@ -4,6 +4,7 @@ public class StringMethods5
 {
 	public static void main(String[] args)
 	{
+		//join method
    String s= String.join(" is ","Java","awsome");
    System.out.println(s);
    

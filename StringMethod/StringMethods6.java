@@ -3,7 +3,7 @@ package com.StringMethod;
 public class StringMethods6 
 {
 	public static void main(String[] args) 
-	{
+	{    //lastIndexOf
 		String s="This is awsome concepts and java is wonderfull language";
 		int size=s.length();
 		System.out.println(size);
