@@ -5,6 +5,7 @@ package com.inheritance;
 //there may be some methods with same name which may exist in both parent clases.so while calling the method it may confuse which 
 //class method should be called..(generate ambiguity problem) so java has removed the concept of multiple inheritance
 //and it will display error message at the time when we extends 2 classes 
+//child class me do same methods nhi ho sakti.... 
 public class NotSupportedMultipleInheritanceWithReason
 {
 	
