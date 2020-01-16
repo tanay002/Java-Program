@@ -22,6 +22,13 @@ public class StringMethods9
 		k=k.trim();
 		System.out.println(k);
 		
+		String gk=" Javatpointtt ";
+		int len=gk.length();
+		System.out.println("before trim"+len);
+		gk=gk.trim();
+		len=gk.length();
+		System.out.println("after trim"+len);
+		
 		//valueOf
 		
 		int value=30;  
