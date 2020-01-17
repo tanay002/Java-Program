@@ -36,7 +36,7 @@ public class MultiLevelInheritance
 		Child p=new Parent();              class  (small class=Child,Higher class=parent)
 		Parent k=new GrandParent(); */
 		
-		Child c=new Child();
+		/*Child c=new Child();
 		c.demo1();
 		c.demo2();
 		c.demo3();
@@ -45,6 +45,13 @@ public class MultiLevelInheritance
 		p.demo2();
 		
 		GrandParent g=new GrandParent();
-		g.demo1();
+		g.demo1();*/
+		
+		Parent p=new Child();
+		p.demo1();
+		p.demo2(); //Parent and grandParent ki method chalegi child ki method nhi chalegi 
+		               //reference parent ka hai(upper class),child is (lower class)
+		
+		
 	}
 }
