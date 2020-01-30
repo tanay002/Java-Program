@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Stack;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-//Problem of FailFast in ArrayList,LinkedList ,Stack, vector 
+//Problem of FailFast in ArrayList,LinkedList ,Stack, vector ,HashSet
 public class Arraylist_FailFast6 
 {
 	public static void main(String[] args)
