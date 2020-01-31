@@ -1,15 +1,15 @@
 package com.collection;
 
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Scanner;
 
-public class LinkedList_Iteration
+public class ArrayList_Iteration1
 {
 	public static void main(String[] args)
 	{
-		LinkedList al=new LinkedList();
+		ArrayList al=new ArrayList();
         System.out.println("Enter total no of element:- ");
         Scanner sc=new Scanner(System.in);
         int no=sc.nextInt();
@@ -19,7 +19,7 @@ public class LinkedList_Iteration
         }
        
         
-	//Iteration of LinkedList
+	//Iteration of ArrayList
 	
         //1. by "get" Method
         System.out.println("Iteration:- get Method");
@@ -27,7 +27,6 @@ public class LinkedList_Iteration
 	{
 		System.out.print(al.get(i)+" ");
 	}
-	
 	System.out.println("");
 	//2. forEach
 	System.out.println("Iteration:- ForEach");
@@ -36,9 +35,9 @@ public class LinkedList_Iteration
 		System.out.print(ob+" ");
 	}
 	System.out.println(" ");
-	for(Object ob:al)  //It internally calculate the Linkedlist size before executing program
+	for(Object ob:al)  //It internally calculate the arraylist size before executing program
 	{
-		System.out.println(al);  //To isme jitna data honga(size)....utni baar chalega [all data of entire object]
+		System.out.println(al);  //To isme jitni data honge(size) utni baar loop chalega [all data of entire object]
 	}
 	
 	System.out.println("");

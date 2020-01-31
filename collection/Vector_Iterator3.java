@@ -6,7 +6,7 @@ import java.util.ListIterator;
 import java.util.Scanner;
 import java.util.Vector;
 
-public class Vector_Iterator  //Legacy Class
+public class Vector_Iterator3
 {
 	public static void main(String[] args)
 	{
