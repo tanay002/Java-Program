@@ -1,9 +1,9 @@
-package com.collection;
+package com.collections;
 
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class TreeSet9 
+public class TreeSet10 
 {
 	public static void main(String[] args) 
 	{

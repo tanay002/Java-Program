@@ -1,4 +1,4 @@
-package com.collection;
+package com.collections;
 
 import java.io.ObjectOutputStream.PutField;
 import java.util.HashMap;
@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-public class HashMap9
+public class HashMap11
 {
 	public static void main(String[] args) 
 	{

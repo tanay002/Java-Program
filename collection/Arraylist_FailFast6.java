@@ -1,11 +1,11 @@
-package com.collection;
+package com.collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Stack;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-//Problem of FailFast in ArrayList,LinkedList ,Stack, vector ,HashSet
+//Problem of FailFast in ArrayList,LinkedList ,Stack, vector,HashSet
 public class Arraylist_FailFast6 
 {
 	public static void main(String[] args)
@@ -16,7 +16,7 @@ public class Arraylist_FailFast6
 		al.add(20);
 		al.add(15);
 		al.add(23);  //ArrayList me data 4 Hai
-		                        
+		                   
 		Iterator it=al.iterator();  //Iterator calculates the mod count of an arraylist ,i.e it gets 4 
 /*comment down line to execute properly->*/
 	 al.add(34);//After adding another element in the array list ....the mod count of arraylist increased to 5

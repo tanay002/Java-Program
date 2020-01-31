@@ -1,13 +1,15 @@
-package com.collection;
+package com.collections;
 
+import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
-
-public class CopyOnWriteArrayList7 
+//Fail Safe->
+public class CopyOnWriteArrayList_FailSafe7 
 {
 	public static void main(String[] args) 
 	{
-     CopyOnWriteArrayList cal=new CopyOnWriteArrayList();
+     CopyOnWriteArrayList cal=new CopyOnWriteArrayList();         //Fail Safe 1
      cal.add(12);
      cal.add(15);
      cal.add(14);
@@ -20,6 +22,17 @@ public class CopyOnWriteArrayList7
      while(it.hasNext())
      {
     	 System.out.println(it.next());
+     }
+     
+     Vector v=new Vector();
+     v.add(10);
+     v.add(3);
+     v.add(5);
+     Enumeration e=v.elements();                                //Fail Safe 2
+     v.add(7);
+     while(e.hasMoreElements())
+     {
+    	 System.out.print(e.nextElement()+" ");
      }
 	}
 }

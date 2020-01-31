@@ -1,9 +1,9 @@
-package com.collection;
+package com.collections;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-public class LinkedHashSet8 
+public class LinkedHashSet9
 {
 	public static void main(String[] args) 
 	{
