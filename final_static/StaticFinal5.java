@@ -10,6 +10,6 @@ public class StaticFinal5
 public static void main(String[] args) 
 {
 	StaticFinal5 f=new StaticFinal5();
-	System.out.println("");
+	System.out.println(id);
 }
 }
