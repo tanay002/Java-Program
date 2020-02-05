@@ -10,6 +10,13 @@ public class HashCodeMeth
 		   this.i=i;
 			this.j=j;
 	}
+	 public int hashCode()
+	 {
+		 int h=(i+" "+j).hashCode();
+		 return h;
+		 
+	 }
+	 
 public static void main(String []args)
 {
 	HashCodeMeth h=new HashCodeMeth(1,"abc");
