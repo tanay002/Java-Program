@@ -15,6 +15,6 @@ public class JdbcTask10
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/practice", "root","root");
 		Statement	st=con.createStatement();
 		row=st.executeUpdate("insert into dbase (name,city,mobileno,college) values ('Rahul','singapore','878756543','kendriya')");
-		System.out.println("Successfully Save");
+		System.out.println("Successfully Save "+row);
 	}
 }

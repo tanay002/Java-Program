@@ -15,6 +15,6 @@ public class JdbcTask11
 		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/practice", "root","root");
 		Statement	st=con.createStatement();
 		row=st.executeUpdate("update dbase set name='mayank',city='kerala' where id='203' ");
-		System.out.println("Successfully Save");
+		System.out.println("Successfully Save "+row);
 	}
 }
