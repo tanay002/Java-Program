@@ -1,4 +1,4 @@
-package com.bytecoder.jdbcSelect;
+package com.bytecoder.storeprocedure;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class StoreProcedure1
+public class JdbcStoreProcedure_Select1
 {
 	public static void main(String[] args) throws SQLException, ClassNotFoundException 
 	{
