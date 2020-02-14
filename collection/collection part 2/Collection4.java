@@ -20,8 +20,22 @@ public class Collection4
 	 a1.add("priya");
 	 a1.add("enquiry wali mam");
 	 
-	a.retainAll(a1);   //retainAll method remove all the element of arraylist 2 presents in the arraylist 1 
-	 System.out.println(a);
+		/* a.retainAll(a1); */   //retainAll method remove all the element of arraylist 2 presents in the arraylist 1 
+	// System.out.println(a);
+	/*----------------------------------------------------------------------------------*/
+		/*
+ 1.)concept
+ 
+		 * a1.addAll(a1); System.out.println(a1);  //add duplicate data
+		 */
+/*   2.) Remove Concept     It will remove existing elements of data
+	 a1.removeAll(a1);
+	 System.out.println(a1);  */
+	 
+	 /*
+	 3) Retain all match data and delete data which does not exist in arralist
 	
+	 a1.retainAll(a1);
+	 System.out.println(a1);   */
 	}
 }
