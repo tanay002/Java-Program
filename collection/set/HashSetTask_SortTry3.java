@@ -49,9 +49,9 @@ public class HashSetTask_SortTry3
 		Employee1 e3=new Employee1(1,"Minal");
 		Employee1 e4=new Employee1(2,"Tanay");
 		HashSet s=new HashSet();
-		s.add(e);
+		s.add(e);                    //We can also sort data by comparator ..by using same process
 		s.add(e1);
-		s.add(e2);
+		s.add(e2);                                   
 		s.add(e3);
 
 		TreeSet s1=new TreeSet(s);

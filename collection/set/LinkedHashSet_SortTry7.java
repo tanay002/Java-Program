@@ -15,7 +15,7 @@ public class LinkedHashSet_SortTry7
 		Coaching c3=new Coaching(75,"Dhruvi",'B');
 		Coaching c4=new Coaching(90,"KP",'C');
 		ls.add(c);
-		ls.add(c1);
+		ls.add(c1);       //We can also sort data by comparator ..by using same process
 		ls.add(c2);
 		ls.add(c3);
 		ls.add(c4);
