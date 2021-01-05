@@ -1,4 +1,4 @@
-package com.java.features8;
+package com.java.features8.LambdaExpression;
 interface MyInterface
 {
 	public void demo();	
